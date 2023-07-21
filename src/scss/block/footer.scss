@@ -1,0 +1,52 @@
+
+@media (min-width:$desktop-width){
+
+
+ .main-footer{
+    margin:0;
+    padding: 0;
+    background-color: #F2F2F2;
+   // border: 1px solid red;
+    
+    
+ }
+ .page-container{
+    width: 984px;
+    height: 520px;
+    margin: auto;
+   // border: 1px solid purple;
+
+ }
+ .main-footer__losung{
+margin: 0;
+padding: 0;
+margin-top: 32px;
+margin-left: 342px;
+font-family: "Muller-Regular", "Arial", sans-serif;
+line-height: 26px;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+
+
+ }
+ 
+.main-footer__text {
+margin: 0;
+padding: 0;
+margin-top: 5px;
+line-height: 24px;
+font-size: 16px;
+text-align: center;
+
+}
+
+.copyright__name{
+
+  padding-top: 32px;
+   display: block;
+   text-align: center;
+   font-size: 16px;
+   line-height: 24px;
+}
+}

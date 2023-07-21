@@ -1,0 +1,22 @@
+@media (min-width:$desktop-width){
+.social{
+    padding: 0;
+    margin: 0;
+   
+    padding-top: 72px;
+}
+
+
+.social-networks{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+   // border: 1px solid black;
+    display: flex;
+    width: 213px;
+    justify-content: space-between;
+    margin: auto;
+    height: 51px;
+ }
+
+}

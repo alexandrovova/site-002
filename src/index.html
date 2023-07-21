@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>gulp</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="js/app.min.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.min.js"></script>
+</head>
+
+<body class="face">
+@@include('html/header.html',{
+})
+
+    <main class="main-container">
+    @@include('html/intro.html',{
+    })
+    @@include('html/advantages.html',{
+    })
+    @@include('html/swiper.html',{
+    })
+    @@include('html/form.html',{
+    })
+    </main>
+    @@include('html/footer.html',{
+    })
+
+</body>
+
+
+</html>

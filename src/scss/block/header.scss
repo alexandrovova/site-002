@@ -1,0 +1,40 @@
+@media (min-width:$desktop-width){
+
+.main-header{
+    margin: 0;
+    padding: 0;
+   // width: 1660px;
+    margin: auto;
+    height: 103px;
+    //border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+
+
+    
+    &__logo {
+        height: 55px;
+        width: 200px;
+       align-self: end;
+    }
+
+    &__link {
+        display: flex;
+        align-self: end;
+        margin-bottom: 21px;
+    }
+    &__name {
+        margin-left: 9px;
+        color: black;
+        font-size: 21px;
+        font-weight: 400;
+    
+    }
+}
+
+
+
+
+
+}
