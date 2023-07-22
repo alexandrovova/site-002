@@ -41,6 +41,17 @@ a {
   font-weight: 500;
 }
 
+.face {
+  font-family: "Muller", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .contacts {
   margin: 0;
   padding: 0;
@@ -100,17 +111,6 @@ a {
 }
 
 @media (min-width: 1280px) {
-  .face {
-    font-family: "Muller-Regular", "Arial", sans-serif;
-    font-style: normal;
-    font-size: 21px;
-    font-weight: 400;
-    color: #000000;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
   .main-header {
     margin: 0;
     padding: 0;
@@ -274,6 +274,205 @@ a {
     z-index: -1;
   }
 
+  .advantages {
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__title {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    padding-top: 166px;
+  }
+
+  .advantages__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #33B5A3;
+    text-transform: uppercase;
+  }
+
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 450px 450px;
+    grid-template-columns: 450px 450px;
+    -webkit-column-gap: 82px;
+       -moz-column-gap: 82px;
+            column-gap: 82px;
+    row-gap: 92px;
+  }
+
+  .advantages__name {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    padding-top: 33px;
+    padding-bottom: 12px;
+    color: #000000;
+  }
+
+  .advantages__description {
+    padding: 0;
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .item-time {
+    border: 4px solid #63D2C1;
+    text-align: center;
+  }
+
+  .item-time__name {
+    padding-top: 39px;
+    padding-bottom: 7px;
+  }
+
+  .item-time__description {
+    padding-bottom: 42px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .form {
+    margin: 0;
+    padding: 0;
+    padding-top: 160px;
+    margin-bottom: 134px;
+  }
+
+  .form__feedback {
+    margin: 0;
+    padding: 0;
+    border: 4px solid #63D2C1;
+  }
+
+  .form__feedback-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 15px;
+  }
+
+  .form__feedback-box {
+    margin-top: 41px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 69px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .form__feedback-icon {
+    width: 46px;
+    height: 69px;
+  }
+
+  .form__feedback-text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 17px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .form__feedback-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 59px;
+  }
+
+  .form__feedback-item {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .form__feedback-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .form__feedback-input {
+    width: 100%;
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    height: 60px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  .form__button {
+    display: block;
+    padding: 17px 75px 15px;
+    background-color: #f9672e;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 22px;
+  }
+
+  .form__link {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666666;
+    width: 235px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 59px;
+  }
+
+  .form__smal-color {
+    color: #F9572E;
+  }
+
   .main-footer {
     margin: 0;
     padding: 0;
@@ -282,7 +481,6 @@ a {
 
   .page-container {
     width: 984px;
-    height: 520px;
     margin: auto;
   }
 
