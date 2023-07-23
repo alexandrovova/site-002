@@ -5,6 +5,7 @@
             <fieldset class="form__feedback">
                 <legend class="form__feedback-logo">Узнайте о запуске сервиса первым
                 </legend>
+                <div class="feedback feedback--open">
                 <div class="form__feedback-box">
                     <svg class="form__feedback-icon" width="46" height="69" viewBox="0 0 46 69" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -44,19 +45,40 @@
                     <small class="form__smal">* Обязательные для заполнения поля <br>
                         <span class="form__smal-color">Политика конфиденциальности</small>
                 </a>
-
+                </div>
+                <div class="modal-form modal-form--close">
+                    <svg class="madal-form__icon" width="194" height="128" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 71.932L76.0442 138L204 10" stroke="#F9572E" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    <h3 class="modal-form__text">Спасибо! Мы будем держать<br>
+                    вас в курсе обновлений</h3>
+                    
+                    </div>
+                
             </fieldset>
-
-
-
-
-
-
-
-
         </form>
-
     </div>
-
-
 </section>
+
+<script>
+
+
+const button = document.querySelector('.form__button');
+const closeForm = document.querySelector('.feedback');
+const modal = document.querySelector('.modal-form');
+
+button.addEventListener('click', function(event) {
+  event.preventDefault(); // Предотвращаем перенаправление на другую страницу
+  closeForm.classList.remove('feedback--open');
+  closeForm.classList.add('feedback--close');
+  modal.classList.remove('modal-form--close');
+  modal.classList.add('modal-form--open');
+});
+
+
+
+
+
+
+
+</script>
