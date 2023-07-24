@@ -52,62 +52,8 @@ a {
   padding: 0;
 }
 
-.contacts {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 76px;
-  line-height: 30px;
-  font-size: 21px;
-  height: 125px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacts__phone {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 51px;
-  margin-top: 16px;
-}
-
-.contacts__tel {
-  margin-left: 8px;
-}
-
-.contacts__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-style: normal;
-}
-
-.contacts__margin {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.contacts__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 58px;
-  margin-top: 16px;
-}
-
-.contacts__gmail {
-  color: black;
-  margin-left: 10px;
+html {
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 1280px) {
@@ -175,7 +121,7 @@ a {
   .main-intro__title {
     margin: 0;
     padding: 0;
-    margin-top: 205px;
+    padding-top: 205px;
     font-size: 64px;
     line-height: 64px;
     font-weight: 500;
@@ -201,6 +147,7 @@ a {
     font-weight: 500;
     line-height: 18px;
     width: 260px;
+    border-radius: 50px/50px;
   }
 
   .main-intro__box {
@@ -225,7 +172,6 @@ a {
     margin: 0;
     padding: 0;
     margin-top: 258px;
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,16 +197,17 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    width: 245px;
+    width: 50%;
     color: #F9572E;
     text-align: center;
-    top: 299px;
-    right: 25%;
+    top: 298px;
+    right: 0;
     cursor: pointer;
   }
 
   .main-intro__play {
     width: 251px;
+    margin: auto;
   }
 
   .main-container {
@@ -362,7 +309,7 @@ a {
     margin: 0;
     padding: 0;
     padding-top: 160px;
-    margin-bottom: 134px;
+    padding-bottom: 134px;
   }
 
   .form__feedback {
@@ -461,6 +408,7 @@ a {
     margin: auto;
     margin-top: 48px;
     margin-bottom: 22px;
+    border-radius: 50px/50px;
   }
 
   .form__link {
@@ -628,10 +576,12 @@ a {
     line-height: 24px;
     font-size: 16px;
     text-align: center;
+    color: #666666;
   }
 
   .copyright__name {
     padding-top: 32px;
+    padding-bottom: 28px;
     display: block;
     text-align: center;
     font-size: 16px;
@@ -657,5 +607,122 @@ a {
             justify-content: space-between;
     margin: auto;
     height: 51px;
+  }
+
+  .contacts {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 76px;
+    line-height: 30px;
+    font-size: 21px;
+    height: 125px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .contacts__phone {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 51px;
+    margin-top: 16px;
+    height: 25px;
+    color: #000000;
+  }
+
+  .contacts__tel {
+    margin-left: 8px;
+  }
+
+  .contacts__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-style: normal;
+  }
+
+  .contacts__margin {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+  }
+
+  .contacts__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 58px;
+    margin-top: 16px;
+    height: 25px;
+  }
+
+  .contacts__gmail {
+    color: black;
+    margin-left: 10px;
+    border-bottom: 1px solid #F9572E;
+  }
+
+  .main-intro__link:hover {
+    background-color: #FF7B59;
+  }
+
+  .main-header__name:hover {
+    color: #F9572E;
+  }
+
+  .swiper__buton-icon:hover {
+    height: 35px;
+  }
+
+  .form__button:hover {
+    background-color: #FF7B59;
+  }
+
+  .social-hover:hover {
+    opacity: 0.4;
+  }
+
+  .contacts__gmail:hover {
+    color: #FF7B59;
+  }
+
+  .email-input:valid:not(:-moz-placeholder-shown) {
+    border-color: green;
+  }
+
+  .email-input:valid:not(:-ms-input-placeholder) {
+    border-color: green;
+  }
+
+  .email-input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+  .email-input:invalid:not(:-moz-placeholder-shown) {
+    outline: 1px solid red;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .email-input:invalid:not(:-ms-input-placeholder) {
+    outline: 1px solid red;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .email-input:invalid:not(:placeholder-shown) {
+    outline: 1px solid red;
+    border: none;
+    border-radius: 4px;
   }
 }

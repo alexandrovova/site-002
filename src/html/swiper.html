@@ -1,70 +1,74 @@
-<section class="swiper">
+<section class="swiper" id="two">
     <div class="page-container">
-    <h2 class="visully-hidden">Дизайны интерьеров</h2>
-    <h3 class="swiper__title">3 стиля интерьера</h3>
-    <p class="swiper__text">Скандинавский, классический и эко-стиль</p>
-    <ul class="swiper__list">
-        <li class="swiper__item">
-            <div class="swiper__box">
-    <img class="swiper__picture" src="img/picture2.png" width="750" height="500">
-    <p class="swiper__description">Кафельная плитка  на кухне в скандинавском стиле</p>
+        <h2 class="visully-hidden">Дизайны интерьеров</h2>
+        <h3 class="swiper__title">3 стиля интерьера</h3>
+        <p class="swiper__text">Скандинавский, классический и эко-стиль</p>
+        <ul class="swiper__list">
+            <li class="swiper__item">
+                <div class="swiper__box">
+                    <img class="swiper__picture" src="img/picture2.png" width="750" height="500">
+                    <p class="swiper__description">Кафельная плитка на кухне в скандинавском стиле</p>
+                </div>
+            </li>
+            <li class="swiper__item">
+                <div class="swiper__box">
+                    <img class="swiper__picture" src="img/picture1.png" width="750" height="500">
+                    <p class="swiper__description">Кафельная плитка в ванной комнате в скандинавском стиле</p>
+                </div>
+            </li>
+            <li class="swiper__item">
+                <div class="swiper__box">
+                    <img class="swiper__picture" src="img/picture3.png" width="750" height="500">
+                    <p class="swiper__description">Комната в скандинавском стиле</p>
+                </div>
+            </li>
+            <div class="swiper__button-box">
+                <button class="swiper__button">
+                    <svg  class="swiper__buton-icon" width="20" height="42" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4443 44.1739L3.10979 24.8394C1.94306 23.6658 1.94306 21.7703 3.10979 20.5967L22.4443 1.26221"
+                            stroke="#F9572E" stroke-width="3" />
+                    </svg>
+                </button>
+                <button class="swiper__button">
+                    <svg class="swiper__buton-icon" width="20" height="42" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.44434 1.26221L20.7789 20.5967C21.9504 21.7683 21.9504 23.6678 20.7789 24.8394L1.44434 44.1739"
+                            stroke="#F9572E" stroke-width="3" />
+                    </svg>
+                </button>
             </div>
-        </li>
-        <li class="swiper__item">
-            <div class="swiper__box">
-            <img class="swiper__picture" src="img/picture1.png" width="750" height="500">
-            <p class="swiper__description">Кафельная плитка в ванной комнате в скандинавском стиле</p>
-            </div>
-        </li>
-        <li class="swiper__item">
-            <div class="swiper__box">
-            <img class="swiper__picture" src="img/picture3.png" width="750" height="500">
-            <p class="swiper__description">Комната в скандинавском стиле</p>
-            </div>
-        </li> 
-        <div class="swiper__button-box">
-    <button class="swiper__button">
-        <svg width="20" height="42" viewBox="0 0 20 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.4443 44.1739L3.10979 24.8394C1.94306 23.6658 1.94306 21.7703 3.10979 20.5967L22.4443 1.26221" stroke="#F9572E" stroke-width="3"/>
-        </svg>
-        </button>
-    <button class="swiper__button">
-        <svg width="20" height="42" viewBox="0 0 20 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.44434 1.26221L20.7789 20.5967C21.9504 21.7683 21.9504 23.6678 20.7789 24.8394L1.44434 44.1739" stroke="#F9572E" stroke-width="3"/>
-        </svg>
-        </button>
-    </div>
-    </ul>
-   
+        </ul>
+
     </div>
 </section>
 <script>
     const swiperItems = document.querySelectorAll('.swiper__item');
-const swiperButtons = document.querySelectorAll('.swiper__button');
-let currentIndex = 0;
+    const swiperButtons = document.querySelectorAll('.swiper__button');
+    let currentIndex = 0;
 
-function showCurrentSlide() {
-    swiperItems.forEach((item, index) => {
-        if (index === currentIndex) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
+    function showCurrentSlide() {
+        swiperItems.forEach((item, index) => {
+            if (index === currentIndex) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    showCurrentSlide();
+
+    swiperButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (button.classList.contains('swiper__button--left')) {
+                currentIndex = (currentIndex === 0) ? swiperItems.length - 1 : currentIndex - 1;
+            } else {
+                currentIndex = (currentIndex === swiperItems.length - 1) ? 0 : currentIndex + 1;
+            }
+            showCurrentSlide();
+        });
     });
-}
-
-showCurrentSlide();
-
-swiperButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        if (button.classList.contains('swiper__button--left')){
-            currentIndex = (currentIndex === 0) ? swiperItems.length - 1 : currentIndex - 1;
-        } else {
-            currentIndex = (currentIndex === swiperItems.length - 1) ? 0 : currentIndex + 1;
-        }
-        showCurrentSlide();
-    });
-});
 
 </script>
 

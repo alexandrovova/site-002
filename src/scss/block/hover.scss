@@ -1,0 +1,42 @@
+@media (min-width:$desktop-width) {
+
+    .main-intro__link:hover {
+        background-color: #FF7B59;
+
+    }
+
+    .main-header__name:hover {
+        color: #F9572E;
+    }
+
+    .swiper__buton-icon:hover {
+        height: 35px;
+    }
+
+    .form__button:hover {
+        background-color: #FF7B59;
+    }
+
+    .social-hover:hover {
+        opacity: 0.4;
+    }
+
+    .contacts__gmail:hover {
+        color: #FF7B59;
+    }
+   
+
+    .email-input:valid:not(:placeholder-shown) {
+        border-color: green;
+    }
+
+    .email-input:invalid:not(:placeholder-shown) {
+        outline: 1px solid red;
+        border: none;
+        border-radius: 4px;
+
+    }
+
+
+
+}
