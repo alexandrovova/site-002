@@ -5,6 +5,7 @@
     padding: 0;
     height: 90vh;
 
+
     &__container {
       padding: 0;
       margin: 0;
@@ -17,12 +18,11 @@
     &__title {
       margin: 0;
       padding: 0;
-      margin-top: 205px;
+      padding-top: 205px;
       font-size: 64px;
       line-height: 64px;
       font-weight: 500;
       width: 520px;
-
     }
 
     &__text {
@@ -37,8 +37,6 @@
 
     &__link {
       padding: 18px 28px 14px 31px;
-
-
       display: block;
       background-color: #F9572E;
       color: #ffffff;
@@ -46,6 +44,7 @@
       font-weight: 500;
       line-height: 18px;
       width: 260px;
+      border-radius: 50px/50px;
 
     }
 
@@ -69,7 +68,6 @@
       margin: 0;
       padding: 0;
       margin-top: 258px;
-      display: block;
       display: flex;
       margin-left: 5px;
       height: 36px;
@@ -88,22 +86,17 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      width: 245px;
-
+      width: 50%;
       color: #F9572E;
       text-align: center;
-      top: 299px;
-      right: 25%;
+      top: 298px;
+      right: 0;
       cursor: pointer;
-
     }
 
     &__play {
       width: 251px;
+      margin: auto;
     }
   }
-
-
-
-
 }

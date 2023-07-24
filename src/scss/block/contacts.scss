@@ -1,14 +1,12 @@
+@media (min-width:$desktop-width) {
 .contacts {
     margin: 0;
     padding: 0;
     display: flex;
-   // border: 1px solid green;
     margin-top: 76px;
-
     line-height: 30px;
     font-size: 21px;
     height: 125px;
-
     justify-content: space-between;
 
     &__phone {
@@ -16,34 +14,40 @@
         display: flex;
         margin-left: 51px;
         margin-top: 16px;
-        
-        
+        height: 25px;
+        color: #000000;
     }
+
     &__tel {
-        margin-left: 8px;
+        margin-left: 8px; 
     }
+
     &__address {
-    
         display: flex;
         flex-direction: column;
         text-align: center;
         font-style: normal;
-}
-    &__margin{
+    }
+
+    &__margin {
         font-size: 16px;
         line-height: 24px;
-       
-        
+        color: #666666;
     }
-    &__mail{
+
+    &__mail {
         display: flex;
         margin-right: 58px;
         margin-top: 16px;
-        
-    }
-    &__gmail{
-        color: black;
-        margin-left: 10px;
+        height: 25px;
+       
     }
 
+    &__gmail {
+        color: black;
+        margin-left: 10px;
+         border-bottom: 1px solid #F9572E;
+    }
+
+}
 }
