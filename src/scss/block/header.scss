@@ -3,6 +3,10 @@ html{
 }
 @media (min-width:$desktop-width) {
 
+    .intro-head{
+        height: 100vh;
+    }
+
     .main-header {
         margin: 0;
         padding: 0;
@@ -11,6 +15,8 @@ html{
         display: flex;
         justify-content: space-between;
         width: 83%;
+
+        
         
 
 
