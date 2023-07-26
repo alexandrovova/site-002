@@ -41,22 +41,26 @@ a {
   font-weight: 500;
 }
 
-.face {
-  font-family: "Muller", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 21px;
-  font-weight: 400;
-  color: #000000;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 @media (min-width: 1280px) {
+  .face {
+    font-family: "Muller", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 400;
+    color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-head {
+    height: 100vh;
+  }
+
   .main-header {
     margin: 0;
     padding: 0;
@@ -106,16 +110,28 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 90vh;
+    height: 857px;
+    position: static;
+  }
+
+  .main-intro::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 95vh;
+    top: 20px;
+    right: 0;
+    background-image: url("/img/intro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 
   .main-intro__container {
     padding: 0;
     margin: 0;
     margin: auto;
-    height: 90vh;
     width: 83%;
-    position: relative;
   }
 
   .main-intro__title {
@@ -171,7 +187,7 @@ html {
   .main-intro__link-two {
     margin: 0;
     padding: 0;
-    margin-top: 258px;
+    margin-top: 9%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,25 +222,8 @@ html {
   }
 
   .main-intro__play {
-    width: 251px;
+    width: 245px;
     margin: auto;
-  }
-
-  .main-container {
-    position: static;
-  }
-
-  .main-container::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 100%;
-    top: 20px;
-    right: 0;
-    background-image: url("/img/intro.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
   }
 
   .advantages {
@@ -409,6 +408,7 @@ html {
     margin-top: 48px;
     margin-bottom: 22px;
     border-radius: 50px/50px;
+    cursor: pointer;
   }
 
   .form__link {
@@ -586,6 +586,24 @@ html {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .main-footer-line {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  .main-footer-line__copyright-line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 91%;
+    background-color: #cccccc;
+    bottom: 0;
+    left: 80px;
   }
 
   .social {

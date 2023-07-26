@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     background-color: #F2F2F2;
+
   }
 
   .page-container {
@@ -36,6 +37,8 @@
 
   .copyright {
 
+
+
     &__name {
       padding-top: 32px;
       padding-bottom: 28px;
@@ -43,6 +46,26 @@
       text-align: center;
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  .main-footer-line {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+
+
+    &__copyright-line::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 91%;
+      background-color: #cccccc; 
+      bottom: 0;
+      left: 80px;
+
     }
   }
 }
